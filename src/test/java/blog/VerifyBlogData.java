@@ -14,6 +14,8 @@ import io.restassured.specification.RequestSpecification;
 
 public class VerifyBlogData {
 	
+	final String BASE_URL = "https://jsonplaceholder.typicode.com";
+	
 	@Test
 	public void SearchFoUserWithUsername() {
 
@@ -68,7 +70,7 @@ public class VerifyBlogData {
 	
 	public String GetUser(String username) {
 		        // Specify the base URL to the RESTful web service
-				RestAssured.baseURI = "https://jsonplaceholder.typicode.com";
+				RestAssured.baseURI = BASE_URL;
 
 				// Get the RequestSpecification of the request that you want to sent
 				// to the server. The server is specified by the BaseURI that we have
@@ -97,7 +99,7 @@ public class VerifyBlogData {
 	
 	public List<Integer> GetPosts(String userId) {
 		        // Specify the base URL to the RESTful web service
-				RestAssured.baseURI = "https://jsonplaceholder.typicode.com";
+				RestAssured.baseURI = BASE_URL;
 
 				// Get the RequestSpecification of the request that you want to sent
 				RequestSpecification httpRequest = RestAssured.given();
@@ -122,7 +124,7 @@ public class VerifyBlogData {
 		// Iterate over the list and print individual book item
 		for (Integer postId : posts) {
 			// Specify the base URL to the RESTful web service
-			RestAssured.baseURI = "https://jsonplaceholder.typicode.com";
+			RestAssured.baseURI = BASE_URL;
 
 			// Get the RequestSpecification of the request that you want to sent
 			RequestSpecification httpRequest = RestAssured.given();
