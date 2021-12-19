@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name = "Restassured">
+<test name = "Sample Test">
+<classes>
+<class name = "com.restassured.test.GetData" />
+</classes>
+</test>
+</suite>
