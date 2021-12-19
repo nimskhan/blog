@@ -38,4 +38,4 @@ $ mvn test -Dtest=VerifyBlogData
 
 ## License
 
-[MIT](LICENSE) © Richard Littauer
+[MIT](LICENSE) © Nimra Inam
